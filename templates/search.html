@@ -1,0 +1,24 @@
+<!doctype html="">
+    <title>Watch Order</title>
+<h2>Create Your Own Anime Watch Order</h2>
+{% from "_formhelpers.html" import render_field %}
+<form method="post">
+  <dl>
+    {{ render_field(form.select) }}
+    <p>
+    {{ render_field(form.search) }}
+  </p></dl>
+  <p><input type="submit" value="Search">
+</p></form>
+
+<ul>
+    
+    <li>
+        <img src="{{data['image']}}'" alt="">
+        <br>
+        <p>{{data['title']}}</p>
+        <br>
+        <p>{{data['episodes']}}</p>
+    </li>
+    
+</ul>
