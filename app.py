@@ -15,13 +15,6 @@ class SearchForm(Form):
     search = StringField('')
 
 
-class MusicSearchForm(Form):
-    choices = [('Anime', 'Anime'),
-               ('Album', 'Album'),
-               ('Publisher', 'Publisher')]
-    select = SelectField('Search for music:', choices=choices)
-    search = StringField('')
-
 
 app = Flask(__name__)
 
